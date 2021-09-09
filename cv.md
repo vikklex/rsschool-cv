@@ -38,3 +38,12 @@ function spinWords(string){
   return result.join(' ');
 }
 ```
+### Education
+- Law faculty of BSU
+- Courses:
+    * IT Academy (HTML, CSS)
+    * IT Academy (JavaScript)
+    
+### Languages:
+- Russian - native speaker
+- English - B1
