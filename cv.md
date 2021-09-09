@@ -22,3 +22,19 @@ I have an increased interest in new knowledge and skills, an inquisitive charact
 - Version control: Git (remote service GitHub)
 - Editors: Sublime, VSCode
 - Photoshop
+
+### Code example:
+
+*Stop gninnipS My sdroW!*
+*Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (like the name of this kata)*
+
+```
+function spinWords(string){
+  string = string.split(' ');
+  let result = [];
+  for(let i = 0; i < string.length; i++) {
+    string[i].length >= 5 ? result.push(string[i].split('').reverse().join('')) : result.push(string[i])
+  }
+  return result.join(' ');
+}
+```
