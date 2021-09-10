@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <meta charset="utf-8">
+    <title>HTML, CSS & Git Basics</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="main-header">
+                <h1>Viktoria Aleksandrovich</h1>
+                <h2>Junior Frontend Developer</h2>
+                <img src='https://i.ibb.co/HCcrCfp/IMG-3803.jpg' alt='photo'>
+            </header>
+            <main>
+                <section class="contact-info">
+                    <h3>Contacts:</h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">Location: Minsk, Belarus</li>
+                        <li class="contact-item">Phone: +375297425637</li>
+                        <li class="contact-item">Telegram: vikklexx</li>
+                        <li class="contact-item">Email: vikalex11@mail.ru</li>
+                        <li class="contact-item">GitHub:<a href='https://github.com/vikklex'> https://github.com/vikklex</a></li>
+                    </ul>     
+                </section>
+                <section class="skills-info">
+                    <h3>Skills and Proficiency:</h3>
+                    <ul class="skills-list">
+                        <li class="skills-item">HTML5, CSS3</li>
+                        <li class="skills-item">Adaptive layout</li>
+                        <li class="skills-item">JavaScript</li>
+                        <li class="skills-item">React JS</li>
+                        <li class="skills-item">Version control: Git (remote service GitHub)</li>
+                        <li class="skills-item">Editors: Sublime, VSCode</li>
+                        <li class="skills-item">Photoshop</li>
+                    </ul>
+                </section>
+                <section class="personal-info">
+                    <h3>About me:</h3>
+                    <p>I have an increased interest in new knowledge and skills, an inquisitive character, a constant need to learn new things and the perfection of the knowledge channel.</p>
+                    <p>I have excellent skills in interaction with people and can find an approach to anyone that makes it as comfortable as possible to be in any team.</p>
+                </section>
+                <section class="code-example">
+                    <h3>Code example:</h3>
+                    <h4><b>Stop gninnipS My sdroW!</b></h4>
+                    <div class="code-description"><h4><i>Write a function that takes in a string of one or more words,</i></h4>
+                        <h4><i>and returns the same string, but with all five or more letter words reversed (like the name of this kata)</i></h4>
+                    </div>
+                        <pre>
+                            <code>
+                                function spinWords(string){
+                                    string = string.split(' ');
+                                    let result = [];
+                                    for(let i = 0; i &lt; string.length; i++) {
+                                        string[i].length >= 5 ? result.push(string[i].split('').reverse().join('')) : 
+                                        result.push(string[i]);
+                                    }
+                                    return result.join(' ');
+                                }
+                            </code>
+                        </pre>
+                </section>
+                <section class="education-info">
+                    <h3>Education:</h3>
+                    <h4>Courses:</h4>
+                    <ul>
+                        <li class="courses-item">IT Academy (HTML, CSS)</li>
+                        <li class="courses-item">IT Academy (JavaScript)</li>
+                        <li class="courses-item">html Academy (HTML, CSS)</li>
+                    </ul>
+                    <details>
+                        <summary>Higher education:</summary>
+                        <h4>Law education:</h4>
+                        <ul>
+                            <li class="university-item">College of law of BSU</li>
+                            <li class="university-item">Faculty of law of BSU</li>
+                        </ul>
+                    </details>
+                </section>
+            </main>
+            <footer>
+                <h6>Minsk, 2021</h6>
+            </footer>
+        </div>
+    </body>
+</html>
