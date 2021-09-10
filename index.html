@@ -38,6 +38,27 @@
                     <h3>About me:</h3>
                     <p>I have an increased interest in new knowledge and skills, an inquisitive character, a constant need to learn new things and the perfection of the knowledge channel.</p>
                     <p>I have excellent skills in interaction with people and can find an approach to anyone that makes it as comfortable as possible to be in any team.</p>
-                </section>    
+                </section>
+                <section class="code-example">
+                    <h3>Code example:</h3>
+                    <h4><b>Stop gninnipS My sdroW!</b></h4>
+                    <div class="code-description"><h4><i>Write a function that takes in a string of one or more words,</i></h4>
+                        <h4><i>and returns the same string, but with all five or more letter words reversed (like the name of this kata)</i></h4>
+                    </div>
+                        <pre>
+                            <code>
+                                function spinWords(string){
+                                    string = string.split(' ');
+                                    let result = [];
+                                    for(let i = 0; i &lt; string.length; i++) {
+                                        string[i].length >= 5 ? result.push(string[i].split('').reverse().join('')) : 
+                                        result.push(string[i]);
+                                    }
+                                    return result.join(' ');
+                                }
+                            </code>
+                        </pre>
+                </section>
+        
     </body>
 </html>
