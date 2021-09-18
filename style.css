@@ -287,6 +287,7 @@ i:hover {
   grid-area: breakpoint1;
 }
 
+
 hr {
   border: none;
   background-color: rgba(13, 143, 230, 0.555);
@@ -305,8 +306,12 @@ footer {
   display: grid;
   background-color: rgba(13, 143, 230, 0.555);
   grid-template-rows: 70%;
-  grid-template-columns: 30% 30% 20%;
+  grid-template-columns: 30% 40% 20%;
   grid-template-areas: "footer1 footer2 footer3";
+}
+.footer-link {
+    font-size: 90%;
+    padding: 5%;
 }
 
 .footer-info,
@@ -322,7 +327,7 @@ footer {
   margin-right: 3%;
   margin-top: 5%;
 }
-.footer-contact {
+.-contact {
   margin: 0;
   font-size: 60%;
 }
@@ -361,6 +366,9 @@ footer {
   }
   li {
     font-size: 80%;
+  }
+  pre {
+      font-size: 70%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -411,9 +419,11 @@ footer {
   }
   .footer-logo {
     width: 10%;
+
   }
   .footer-contact {
     font-size: 52%;
+    padding: 2%;
   }
   ul {
     margin-left: 0px;
@@ -446,7 +456,7 @@ footer {
   .footer_logo {
     width: 50%;
   }
-  .footer-link, .footer-info {
+   .footer-info {
       padding: 0px;
   }
 }
