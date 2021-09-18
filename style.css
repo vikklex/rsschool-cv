@@ -295,15 +295,7 @@ hr {
   width: 50%;
   margin-right: 50%;
 }
-.hr2 {
-  border: none;
-  background-color: rgba(13, 143, 230, 0.555);
-  color: rgba(13, 143, 230, 0.555);
-  height: 5px;
-  width: 100%;
-  margin-top: %;
-  margin-left: 60%;
-}
+
 .fourth-line {
   grid-area: column4;
   width: 100%;
