@@ -1,86 +1,280 @@
-<!doctype html>
-<html lang='en'>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <meta charset="utf-8">
-    <title>HTML, CSS & Git Basics</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="main-header">
-                <h1>Viktoria Aleksandrovich</h1>
-                <h2>Junior Frontend Developer</h2>
-                <img src='https://i.ibb.co/HCcrCfp/IMG-3803.jpg' alt='photo'>
-            </header>
-            <main>
-                <section class="contact-info">
-                    <h3>Contacts:</h3>
-                    <ul class="contact-list">
-                        <li class="contact-item">Location: Minsk, Belarus</li>
-                        <li class="contact-item">Phone: +375297425637</li>
-                        <li class="contact-item">Telegram: vikklexx</li>
-                        <li class="contact-item">Email: vikalex11@mail.ru</li>
-                        <li class="contact-item">GitHub:<a href='https://github.com/vikklex'> https://github.com/vikklex</a></li>
-                    </ul>     
-                </section>
-                <section class="skills-info">
-                    <h3>Skills and Proficiency:</h3>
-                    <ul class="skills-list">
-                        <li class="skills-item">HTML5, CSS3</li>
-                        <li class="skills-item">Adaptive layout</li>
-                        <li class="skills-item">JavaScript</li>
-                        <li class="skills-item">React JS</li>
-                        <li class="skills-item">Version control: Git (remote service GitHub)</li>
-                        <li class="skills-item">Editors: Sublime, VSCode</li>
-                        <li class="skills-item">Photoshop</li>
-                    </ul>
-                </section>
-                <section class="personal-info">
-                    <h3>About me:</h3>
-                    <p>I have an increased interest in new knowledge and skills, an inquisitive character, a constant need to learn new things and the perfection of the knowledge channel.</p>
-                    <p>I have excellent skills in interaction with people and can find an approach to anyone that makes it as comfortable as possible to be in any team.</p>
-                </section>
-                <section class="code-example">
-                    <h3>Code example:</h3>
-                    <h4><b>Stop gninnipS My sdroW!</b></h4>
-                    <div class="code-description"><h4><i>Write a function that takes in a string of one or more words,</i></h4>
-                        <h4><i>and returns the same string, but with all five or more letter words reversed (like the name of this kata)</i></h4>
-                    </div>
-                        <pre>
-                            <code>
-                                function spinWords(string){
-                                    string = string.split(' ');
-                                    let result = [];
-                                    for(let i = 0; i &lt; string.length; i++) {
-                                        string[i].length >= 5 ? result.push(string[i].split('').reverse().join('')) : 
-                                        result.push(string[i]);
-                                    }
-                                    return result.join(' ');
-                                }
-                            </code>
-                        </pre>
-                </section>
-                <section class="education-info">
-                    <h3>Education:</h3>
-                    <h4>Courses:</h4>
-                    <ul>
-                        <li class="courses-item">IT Academy (HTML, CSS)</li>
-                        <li class="courses-item">IT Academy (JavaScript)</li>
-                        <li class="courses-item">html Academy (HTML, CSS)</li>
-                    </ul>
-                    <details>
-                        <summary>Higher education:</summary>
-                        <h4>Law education:</h4>
-                        <ul>
-                            <li class="university-item">College of law of BSU</li>
-                            <li class="university-item">Faculty of law of BSU</li>
-                        </ul>
-                    </details>
-                </section>
-            </main>
-            <footer>
-                <h6>Minsk, 2021</h6>
-            </footer>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Philosopher:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Viktoria Aleksandrovich</h1>
+        <h2>Junior Frontend Developer</h2>
+      </header>
+      <div class="person-image">
+        <div class="vl1"></div>
+        <div class="vl2"></div>
+        <div class="vl3"></div>
+        <hr class="fourth-line" />
+        <img
+          class="person-photo"
+          src="https://i.ibb.co/FKByG6D/IMG-3803.jpg"
+          alt="photo"
+        />
+      </div>
+      <nav class="topNav" id="myTopNav">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#code">Code</a>
+          <a href="#project">Project</a>
+          <a href="#education">Education</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-    </body>
+      </nav>
+      <nav class="knowledges-contacts">
+        <section class="skills-info" id="skills">
+          <h3>Skills and Proficiency:</h3>
+          <ul class="skills-list">
+            <li class="skills-item">HTML5, CSS3</li>
+            <li class="skills-item">Adaptive layout</li>
+            <li class="skills-item">JavaScript</li>
+            <li class="skills-item">React JS</li>
+            <li class="skills-item">
+              Version control: Git (remote service GitHub)
+            </li>
+            <li class="skills-item">Editors: Sublime, VSCode</li>
+            <li class="skills-item">Photoshop</li>
+          </ul>
+        </section>
+        <section class="contact-info">
+          <h3 class="title-contacts">Contacts:</h3>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <i class="fas fa-map-marker-alt"></i> Minsk, Belarus
+            </li>
+            <li class="contact-item phone">
+              <i class="fas fa-phone-square-alt"></i
+              ><a href="tel:+375297425637"> +375 (29) 742-56-37</a>
+            </li>
+            <li class="contact-item">
+              <i class="fab fa-telegram"></i
+              ><a href="https://t.me/vikklexx"> vikklexx</a>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-envelope"></i
+              ><a href="vilakex11@mail.ru"> vikalex11@mail.ru</a>
+            </li>
+            <li class="contact-item">
+              <i class="fab fa-whatsapp"></i
+              ><a href="‎https://whatsapp.com/dl/"> +7 (985) 868-29-27</a>
+            </li>
+            <li class="contact-item">
+              <i class="fab fa-github"></i
+              ><a href="https://github.com/vikklex">
+                https://github.com/vikklex</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="lala6">
+          <h3>Languages:</h3>
+          <ul class="languages-list">
+            <li class="language-item">English: B1</li>
+            <li class="kanguage-item">Russian: native speaker</li>
+            <li class="language-item">Belarusian: native speaker</li>
+          </ul>
+        </section>
+      </nav>
+      <section class="video-part">
+        <h3>Video-presentation:</h3>
+        <hr class="video-line" />
+
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/-9Tfh37PVx8"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <hr class="video-line" />
+      </section>
+      <section class="personal-info" id="about">
+        <h2 class="title-about">About me:</h2>
+        <hr />
+        <p>
+          I have an increased interest in new knowledge and skills, an
+          inquisitive character a constant need to learn new things and the
+          perfection of the knowledge channel. I have excellent skills in
+          interaction with people and can find an approach to anyone that makes
+          it as comfortable as possible to be in any team.
+        </p>
+        <p>
+          I’d describe myself as a goal-oriented and hardworking person with
+          good organizational skills and strategic thinking. Furthermore, I’m a
+          good speaker and even a better listener — that’s why I’ve always been
+          able to get along with different types of people.
+        </p>
+        <p>
+          I can describe myself as a hard-working, responsible and highly
+          organized person. I often have to deal with difficult situations and
+          take quick decisions. One of my main strength is the ability to work
+          under pressure. The job you are offering me would allow me to broaden
+          my knowledge and experience with safety, which is my professional
+          goal.
+        </p>
+      </section>
+      <article class="main-info">
+        <h2 class="code-example-title">Code example:</h2>
+        <section class="code-example" id="code">
+          <h4 class="task-name"><b>Stop gninnipS My sdroW!</b></h4>
+          <div class="code-description">
+            <h4 class="text-description">
+              Your task is to write such a run-length encoding. For a given
+              string, return a list (or array) of pairs (or arrays) [ (i1, s1),
+              (i2, s2), …, (in, sn) ], such that one can reconstruct the
+              original string by replicating the character sx ix times and
+              concatening all those strings.
+            </h4>
+          </div>
+          <pre><code class="html">
+function runLengthEncoding(str){
+    let arr = [];
+    let counter = 1;
+    for(let i = 0; i &lt; str.length; i++){
+        if(str[i] === str[i+1]){
+            counter++;
+        }
+        arr.push([counter, str[i]]);
+        counter = 1;
+    }
+    return arr
+}
+        </code></pre>
+        </section>
+      </article>
+      <section class="projects" id="project">
+        <h2 class="project-title">Project example:</h2>
+        <div class="project-description">
+          <h4 class="project-subtitle">Project description</h4>
+          <p class="about-project">
+            The name of the project is "Elf against the trolls". This is a game,
+            the main idea of ​​which is that an animated main character, an elf,
+            collects coins and tries not to get caught by his enemies. Enemies
+            are of three types - a troll (the most dangerous, the most points
+            are removed for him), a knight is also dangerous, but less dangerous
+            than a troll and birds.
+          </p>
+          <p>
+            The main character has a certain set of bullets (10), at the end of
+            which you need to wait 7 seconds for new bullets to appear. There is
+            also a saving mushroom, which can be sowed without being afraid of
+            enemies for 5 seconds. At the end of the game, the results are sent
+            to the database. By clicking on the "results" button you can get the
+            results of the previous players. The game is rendered using canvas,
+            characters are sprites.
+            <span><b>Technologies</b>: HTML, CSS, JS.</span>
+            Link:
+            <a href="https://github.com/vikklex/elf-and-trolls" target="_blank">
+              https://github.com/vikklex/elf-and-trolls</a
+            >
+          </p>
+        </div>
+        <div class="project-image">
+          <a href="https://github.com/vikklex/elf-and-trolls" target="_blank">
+            <img
+              class="project-photo"
+              src="img/imgonline-com-ua-Resize-s7ggXca74L2moP.jpg"
+              alt="project"
+          /></a>
+        </div>
+      </section>
+      <section class="education-info" id="education">
+        <h3 class="edu-title">Education:</h3>
+        <div class="coursers">
+          <h4>Courses:</h4>
+          <ul>
+            <li class="courses-item">IT Academy (HTML, CSS)</li>
+            <li class="courses-item">IT Academy (JavaScript)</li>
+            <li class="courses-item">html Academy (HTML, CSS)</li>
+          </ul>
+        </div>
+        <div class="higher-edu">
+          <h4>Higher Education:</h4>
+          <ul>
+            <li class="university-item">College of law of BSU</li>
+            <li class="university-item">Faculty of law of BSU</li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-info">
+          <h6 class="rss-link">Made with love in</h6>
+          <img class="footer_logo" src="img/rs_school_js.svg" alt="rss-logo" />
+        </div>
+        <div class="footer-link">
+          <i class="fab fa-github"></i>
+          <a class="footer-contact" href="https://github.com/vikklex"
+            >https://github.com/vikklex</a
+          >
+        </div>
+        <h6 class="footer-link_rss">https://rs.school/js/</h6>
+      </footer>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopNav");
+        if (x.className === "topNav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topNav";
+        }
+      }
+      console.log(
+        "Итого +150",
+        "Верстка валидная(проверено на валидаторе) + 10баллов",
+        "Верстка семантическая - заголовки h1,h2,h3,h4,h6, и header, nav, section, article, footer + 20баллов",
+        "css styles over 40 + 10баллов",
+        "контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы + 10",
+        "вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10",
+        "есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным. +10",
+        "на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt +10",
+        "контакты для связи и перечень навыков оформлены в виде списка ul > li +10",
+        "CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10",
+        "CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода.  +10",
+        "CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10",
+        "CV выполнено на английском языке +10",
+        "выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10",
+        "есть видеорезюме автора CV на английском языке. Видеорезюме встраивается в страницу CV как видео, а не в виде кнопки или ссылки. Продолжительность видео 3-5 минут (±15 секунд). В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке (например, в документе Google Docs). +10",
+        "дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10"
+      );
+    </script>
+  </body>
 </html>
