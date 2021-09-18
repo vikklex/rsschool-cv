@@ -196,4 +196,143 @@ pre {
 .coursers {
   grid-area: breakpoint5;
 }
+.higher-edu {
+  grid-area: breakpoint3;
+}
+
+h1 {
+  color: white;
+}
+h3 {
+  color: rgba(13, 143, 230, 0.815);
+}
+h1,
+h2,
+h3,
+h4,
+.title-about {
+  font-family: "Bad Script", cursive;
+}
+
+p,
+.code-description,
+.task-name,
+.text-description,
+li {
+  font-family: "Philosopher", sans-serif;
+}
+.title-contacts {
+  color: black;
+}
+
+.vl1 {
+  grid-area: column1;
+  border-left: 6px solid rgba(13, 143, 230, 0.555);
+  height: 100%;
+  margin: 10% 90%;
+}
+.vl2 {
+  grid-area: column2;
+  border-left: 6px solid rgba(13, 143, 230, 0.555);
+  height: 100%;
+  margin: 10% 90%;
+}
+.vl3 {
+  grid-area: column2;
+  border-left: 6px solid rgba(101, 101, 104, 0.37);
+  height: 100%;
+  margin: 10% 232%;
+}
+.contact-item {
+  list-style: none;
+  margin: 3%;
+}
+a {
+  color: lightslategray;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(13, 143, 230);
+}
+i {
+  font-size: 100%;
+  color: gray;
+}
+i:hover {
+  color: rgb(13, 143, 230);
+}
+
+.main-info {
+  grid-area: article1;
+  display: grid;
+  grid-template-rows: 20% 45%;
+
+  grid-template-areas: "point0 point1";
+}
+.code-example-title {
+  grid-area: point0;
+  margin-left: 30%;
+}
+
+.code-example {
+  grid-area: point0;
+  margin: 10%;
+}
+.codd {
+  grid-area: point1;
+  margin-left: -70%;
+}
+
+.edu-title {
+  grid-area: breakpoint1;
+}
+
+hr {
+  border: none;
+  background-color: rgba(13, 143, 230, 0.555);
+  color: rgba(13, 143, 230, 0.555);
+  height: 5px;
+  width: 50%;
+  margin-right: 50%;
+}
+.hr2 {
+  border: none;
+  background-color: rgba(13, 143, 230, 0.555);
+  color: rgba(13, 143, 230, 0.555);
+  height: 5px;
+  width: 100%;
+  margin-top: %;
+  margin-left: 60%;
+}
+.fourth-line {
+  grid-area: column4;
+  width: 100%;
+}
+footer {
+  grid-area: footer;
+  display: grid;
+  background-color: rgba(13, 143, 230, 0.555);
+  grid-template-rows: 70%;
+  grid-template-columns: 30% 30% 20%;
+  grid-template-areas: "footer1 footer2 footer3";
+}
+
+.footer-info,
+.footer-link_rss {
+  padding: 3%;
+}
+.footer-logo {
+  display: inline;
+}
+.rss-link {
+  width: 10%;
+  display: inline;
+  margin-right: 3%;
+  margin-top: 5%;
+}
+.footer-contact {
+  margin: 0;
+  font-size: 60%;
+}
+
 
