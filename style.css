@@ -335,4 +335,40 @@ footer {
   font-size: 60%;
 }
 
+@media screen and (max-width: 1100px) {
+  .person-photo {
+    height: 60%;
+  }
+  .video {
+    height: 60%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    grid-template-rows: 8% 16% 30% 29% 13% 4%;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 100%;
+  }
+  p {
+    font-size: 70%;
+  }
+  .person-photo {
+    height: auto;
+  }
+  .project-photo {
+    width: 80%;
+  }
+  .video {
+    height: 50%;
+  }
+  .knowledges-contacts {
+    padding: 0;
+  }
+  li {
+    font-size: 80%;
+  }
+}
 
